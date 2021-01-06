@@ -1,0 +1,721 @@
+
+/***** 01. Sass Variables *****/
+/* Colors */
+/* dark blue */
+/* gold */
+/* lighter gold */
+/* light gray */
+/* Fonts */
+/***** 02. General Styles *****/
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font: 300 16px/26px "Poppins", sans-serif;
+  color: #071a24; }
+
+h1 {
+  font: 300 36px/46px "Poppins", sans-serif; }
+
+h2 {
+  font: 500 25px/34px "Poppins", sans-serif; }
+
+h3 {
+  font: 500 21px/30px "Poppins", sans-serif; }
+
+p {
+  font: 300 16px/26px "Poppins", sans-serif; }
+
+a {
+  color: #071a24;
+  text-decoration: underline; }
+
+a:hover {
+  color: #000; }
+
+
+
+/* Carousel */
+.carousel-control .glyphicon-menu-right,
+.carousel-control .glyphicon-menu-left {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+  font-size: 30px; }
+
+.carousel-control .glyphicon-menu-left {
+  left: 50%;
+  margin-left: -10px; }
+
+.carousel-control .glyphicon-menu-right {
+  right: 50%;
+  margin-right: -10px; }
+
+a.left.carousel-control, a.right.carousel-control {
+  opacity: 1; }
+
+.right.carousel-control {
+  background-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.5) 100%); }
+
+.left.carousel-control {
+  background-image: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.5) 100%); }
+
+/* Heading Text Underline */
+.underline {
+  display: inline-block; }
+
+.underline:after {
+  display: block;
+  content: "";
+  width: 80%;
+  margin: 7px  auto 0 auto;
+  border-bottom: solid 2px #ddb24a; }
+
+/* Forms succes and error alerts formatting */
+#dmsgSubmit.h3.text-center.tada.animated.text-success {
+  font: 300 20px/32px "Poppins", sans-serif;
+  color: #fff; }
+
+#dmsgSubmit.h3.text-center.text-danger {
+  font: 300 20px/32px "Poppins", sans-serif;
+  color: #fff; }
+
+#cmsgSubmit.h3.text-center.tada.animated.text-success {
+  font: 300 20px/32px "Poppins", sans-serif;
+  color: #071a24; }
+
+#cmsgSubmit.h3.text-center.text-danger {
+  font: 300 20px/32px "Poppins", sans-serif;
+  color: #071a24; }
+
+/***** 03. Navigation *****/
+/* Image Logo */
+.navbar-brand.img-logo {
+  width: 101px;
+  height: 35px;
+  padding: 4px 0 0 0; }
+
+/* Navbar */
+.navbar-custom {
+  background-color: #071a24;
+  border-color: transparent;
+  font: 300 14px/22px "Poppins", sans-serif; }
+
+.navbar-custom .navbar-brand {
+  color: #fff; }
+
+a.navbar-brand.img-logo {
+  margin-left: 10px;
+  margin-top: 60px; }
+
+a.navbar-brand.img-logo.scrolling {
+  margin-top: 6px;
+  margin-left: 15px; }
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+  color: #fff;
+  opacity: 1; }
+
+.navbar-custom .navbar-collapse {
+  border-color: rgba(255, 255, 255, 0.02); }
+
+.navbar-custom .navbar-toggle,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #ddb24a;
+  border-color: #ddb24a;
+  color: #071a24;
+  font: 300 14px/19px "Poppins", sans-serif; }
+
+.navbar-custom .navbar-toggle:hover {
+  color: #071a24;
+  background-color: #edc25b; }
+
+.navbar-custom .nav li a.scrolling {
+  color: #fff;
+  opacity: 0.7;
+  text-decoration: none; }
+
+.navbar-custom .nav li a:hover {
+  color: #fff;
+  outline: none;
+  opacity: 1; }
+
+.navbar-custom .navbar-nav > .active > a.scrolling {
+  border-radius: 0;
+  color: #fff;
+  background-color: transparent;
+  opacity: 1; }
+
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: transparent; }
+
+a.navbar-brand.scrolling {
+  text-decoration: none;
+  font: 300 26px/20px "Poppins", sans-serif;
+  color: #fff;
+  margin-top: 4px; }
+
+.navbar-custom.affix .navbar-brand {
+  font: 300 26px/20px "Poppins", sans-serif; }
+
+/***** 04. Header *****/
+header {
+  position: relative;
+  min-height: auto;
+  width: 100%;
+  background-color: #071a24;
+  /* Image displayed on mobile devices instead of video, to reduce data consumption and waiting time.
+  It's also the image shown if the video doesn't load for some reason.
+  Change this image with the first frame of your video, you can make and use a screenshot of it */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("http://placehold.it/1920x1080/202020/fff") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%; }
+  header .flex-container-wrapper {
+    /* IE fix for vertical alignment in flex box */
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+  header .header-content {
+    background: linear-gradient(rgba(2, 13, 19, 0.7), rgba(2, 13, 19, 0.7));
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
+    z-index: 2;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh; }
+    header .header-content iframe {
+      width: 100%;
+      height: 100%; }
+    header .header-content .embed-responsive {
+      margin-top: 25px; }
+    header .header-content h1 {
+      font: 300 42px/52px "Poppins", sans-serif;
+      color: #fff;
+      margin-bottom: 25px;
+      margin-top: 35px; }
+    header .header-content p {
+      font: 300 16px/26px "Poppins", sans-serif;
+      color: #fff;
+      margin-left: 0%;
+      margin-right: 0%; }
+    header .header-content .app-price {
+      margin-top: 30px;
+      font: 300 44px/56px "Poppins", sans-serif;
+      text-align: center; }
+      header .header-content .app-price a {
+        font: 300 16px/26px "Poppins", sans-serif;
+        color: #fff;
+        text-decoration: underline; }
+    header .header-content .header-buttons {
+      margin-top: 25px;
+      text-align: center; }
+      header .header-content .header-buttons a {
+        display: inline-block;
+        margin-right: 5px;
+        padding: 8px 40px 8px 40px; }
+      header .header-content .header-buttons .button-large-transparent {
+        margin-top: 20px;
+        padding: 6px 40px 6px 40px; }
+
+#video-background {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1; }
+
+#video-background.collapsing {
+  display: none; }
+
+
+/***** Description Section *****/
+#description-section {
+  padding-top: 70px;
+  padding-bottom: 90px; }
+  #description-section h1 {
+    margin-bottom: 50px; }
+  #description-section .first-row img {
+    width: 100%;
+    margin-bottom: 40px; }
+  #description-section .first-row h2 {
+    margin-bottom: 20px; }
+  #description-section .first-row .button-small-solid {
+    display: inline-block;
+    margin-top: 15px; }
+  #description-section .second-row {
+    margin-top: 100px; }
+    #description-section .second-row img {
+      width: 100%;
+      margin-bottom: 40px; }
+    #description-section .second-row .nav-pills {
+      margin-top: 0px;
+      margin-bottom: 30px; }
+      #description-section .second-row .nav-pills li {
+        text-align: center;
+        width: 100%; }
+        #description-section .second-row .nav-pills li a {
+          font: 300 18px/26px "Poppins", sans-serif;
+          background-color: none;
+          color: #6a6a6a;
+          border: 1px solid #aaa;
+          border-radius: 25px;
+          margin-right: 4px;
+          margin-top: 10px;
+          padding: 10px 30px 10px 30px;
+          text-decoration: none; }
+      #description-section .second-row .nav-pills li a:hover {
+        background-color: #071a24;
+        color: #fff;
+        border: 1px solid #071a24; }
+      #description-section .second-row .nav-pills li.active a {
+        background-color: #071a24;
+        color: #fff;
+        border: 1px solid #071a24; }
+    #description-section .second-row #tab_a ul {
+      list-style: none; }
+    #description-section .second-row #tab_a .button-small-solid {
+      display: inline-block;
+      margin-top: 15px; }
+    #description-section .second-row #tab_b {
+      margin-top: 20px; }
+      #description-section .second-row #tab_b .progress {
+        height: 30px;
+        border-radius: 4px;
+        margin-top: 20px; }
+      #description-section .second-row #tab_b .progress-bar {
+        text-align: left;
+        font: 300 14px/22px "Poppins", sans-serif;
+        background-color: #ddb24a;
+        color: white;
+        padding-left: 20px;
+        padding-top: 5px; }
+    #description-section .second-row #tab_c .button-small-solid {
+      display: inline-block;
+      margin-top: 15px; }
+    #description-section .second-row .tab-content ul {
+      padding-left: 20px; }
+      #description-section .second-row .tab-content ul .checkmark {
+        margin-right: 10px; }
+
+/***** Screenshots Section *****/
+#screenshots-section {
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background-color: #e5e5e5; }
+  #screenshots-section #myCarousel {
+    display: inline-block;
+    margin-top: 50px; }
+    #screenshots-section #myCarousel .carousel-control.left {
+      background: none;
+      margin-top: -140px;
+      opacity: 0.7; }
+    #screenshots-section #myCarousel .carousel-control.right {
+      right: 0;
+      left: auto;
+      background: none;
+      margin-top: -140px;
+      opacity: 0.7; }
+    #screenshots-section #myCarousel .carousel-control:hover,
+    #screenshots-section #myCarousel .carousel-control:focus {
+      color: #fff;
+      text-decoration: none;
+      filter: alpha(opacity=90);
+      outline: 0;
+      opacity: 1; }
+    #screenshots-section #myCarousel .carousel-caption {
+      position: relative;
+      right: 0%;
+      margin-bottom: 20px;
+      left: 0%;
+      z-index: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: #071a24;
+      text-align: center;
+      text-shadow: none; }
+      #screenshots-section #myCarousel .carousel-caption p {
+        margin-top: 23px;
+        margin-bottom: 2px; }
+    #screenshots-section #myCarousel .carousel-indicators li {
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      margin: 1px;
+      text-indent: -999px;
+      cursor: pointer;
+      background-color: transparent;
+      border: 1px solid #071a24;
+      border-radius: 10px; }
+    #screenshots-section #myCarousel .carousel-indicators .active {
+      width: 10px;
+      height: 10px;
+      margin: 0;
+      background-color: #071a24; }
+
+/***** Free Trial Section *****/
+#free-trial-section {
+  padding-top: 70px;
+  padding-bottom: 90px;
+  background: linear-gradient(rgba(17, 53, 71, 0.7), rgba(17, 53, 71, 0.7)), url("http://placehold.it/2200x1243/3a3a3a/fff");
+  background-size: cover;
+  background-attachment: fixed; }
+  #free-trial-section h1 {
+    margin-bottom: 50px;
+    color: #fff; }
+  #free-trial-section p {
+    margin-bottom: 60px;
+    color: #fff; }
+  #free-trial-section form {
+    /* firefox 19+ */
+    /* ie */ }
+    #free-trial-section form input {
+      height: 42px;
+      background: transparent;
+      font: 300 16px/26px "Poppins", sans-serif;
+      color: #fff;
+      border: none;
+      box-shadow: none;
+      border-radius: 0px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+      text-align: center;
+      margin-top: 20px; }
+    #free-trial-section form input:focus {
+      box-shadow: 0 4px 2px -2px #51cbee; }
+    #free-trial-section form ::-webkit-input-placeholder {
+      color: #fff;
+      opacity: 0.8; }
+    #free-trial-section form ::-moz-placeholder {
+      color: #fff;
+      opacity: 0.8; }
+    #free-trial-section form :-ms-input-placeholder {
+      color: #fff;
+      opacity: 0.8; }
+    #free-trial-section form input:-moz-placeholder {
+      color: #fff;
+      opacity: 0.8; }
+    #free-trial-section form button {
+      margin-top: 20px; }
+
+
+
+/***** About Us Section *****/
+#about-us-section {
+  padding-top: 70px;
+  padding-bottom: 90px; }
+  #about-us-section h1 {
+    margin-bottom: 50px; }
+  #about-us-section p {
+    margin-bottom: 60px; }
+  #about-us-section h2 {
+    font-weight: 300;
+    margin-top: 60px;
+    margin-bottom: 40px; }
+  #about-us-section img {
+    width: 90%;
+    border-radius: 10px; }
+  #about-us-section .development-process {
+    text-align: left; }
+    #about-us-section .development-process .process-container {
+      margin-top: 40px; }
+    #about-us-section .development-process p {
+      margin-left: 0%;
+      margin-right: 0%; }
+    #about-us-section .development-process .about-us-icons {
+      font-size: 38px;
+      color: #ddb24a;
+      float: left;
+      margin-top: 3px; }
+    #about-us-section .development-process .text-div {
+      margin-left: 55px;
+      margin-top: 10px; }
+      #about-us-section .development-process .text-div h3 {
+        display: inline; }
+      #about-us-section .development-process .text-div p {
+        margin-bottom: 5px; }
+
+/***** Social Medial Section *****/
+#social-media-section {
+  padding-top: 19px;
+  padding-bottom: 18px;
+  background-color: #ddb24a; }
+  #social-media-section span {
+    font-size: 40px;
+    color: #fff;
+    margin: 7px 5px 7px 5px; }
+  #social-media-section a {
+    opacity: 0.7; }
+  #social-media-section a:hover {
+    opacity: 1; }
+
+
+
+/***** 14. Footer *****/
+footer {
+  padding-top: 22px;
+  padding-bottom: 18px;
+  background-color: #071a24; }
+  footer p {
+    font: 300 14px/22px "Poppins", sans-serif;
+    color: white;
+    text-align: center;
+    opacity: 0.8;
+    width: 90%;
+    margin: 0 auto; }
+
+/***** 15. Back To Top Button *****/
+a.back-to-top {
+  display: none;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 10px;
+  bottom: 10px;
+  background: #071a24 url("../images/up-arrow.png") no-repeat center 47%;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background-size: 18px 18px; }
+
+a:hover.back-to-top {
+  background-color: #193e52; }
+
+/***** 16. Media Queries *****/
+/*Min-width width 768*/
+@media (min-width: 768px) {
+  .navbar-brand.img-logo {
+    padding: 2px 0 0 0; }
+
+  .navbar-custom.affix .navbar-brand.img-logo {
+    width: 101px;
+    height: 35px;
+    margin-top: 6px; }
+
+  .navbar-custom {
+    background-color: transparent;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none; }
+
+  .navbar-custom .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+
+  .navbar-custom .navbar-nav > .active > a {
+    border-radius: 3px; }
+
+  .navbar-custom.affix {
+    background-color: #071a24;
+    padding: 5px 0; }
+
+  a.navbar-brand.scrolling {
+    font: 300 28px/16px "Poppins", sans-serif;
+    margin-top: 0px; }
+
+  .navbar-custom.affix .navbar-brand {
+    font: 300 25px/20px "Poppins", sans-serif; }
+
+  .navbar-custom .nav li a.scrolling {
+    padding-left: 12px;
+    padding-right: 12px; }
+
+  a.navbar-brand.img-logo.scrolling {
+    margin-left: 0px; }
+
+  header {
+    min-height: 100%; }
+    header .header-content {
+      position: relative;
+      width: 100%;
+      padding: 100px 15px;
+      z-index: 2;
+      margin-top: 0px; }
+      header .header-content iframe {
+        width: 100%;
+        height: 100%; }
+      header .header-content .embed-responsive {
+        margin-top: 25px; }
+      header .header-content h1 {
+        font: 300 44px/56px "Poppins", sans-serif; }
+      header .header-content .header-buttons .button-large-transparent {
+        margin-top: 0px; }
+
+  #testimonials-section {
+    padding-top: 50px;
+    padding-bottom: 110px; }
+
+  #features-section {
+    padding-top: 110px;
+    padding-bottom: 50px; }
+    #features-section h1 {
+      margin-bottom: 80px; }
+    #features-section .sub-heading {
+      margin-left: 5%;
+      margin-right: 5%; }
+
+  #description-section {
+    padding-top: 110px;
+    padding-bottom: 120px; }
+    #description-section h1 {
+      margin-bottom: 80px; }
+    #description-section .first-row .text-center {
+      text-align: left; }
+    #description-section .second-row .nav-pills li {
+      width: auto;
+      text-align: initial; }
+    #description-section .second-row .text-center {
+      text-align: left; }
+
+  #screenshots-section {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    #screenshots-section h1 {
+      margin-bottom: 90px; }
+    #screenshots-section #myCarousel {
+      margin-top: 0px; }
+
+  #free-trial-section {
+    padding-top: 110px;
+    padding-bottom: 120px; }
+    #free-trial-section h1 {
+      margin-bottom: 80px; }
+    #free-trial-section p {
+      margin-left: 5%;
+      margin-right: 5%; }
+
+  #applications-portfolio-section {
+    padding-top: 110px;
+    padding-bottom: 120px; }
+    #applications-portfolio-section h1 {
+      margin-bottom: 80px; }
+    #applications-portfolio-section img {
+      margin-top: 80px; }
+
+  #about-us-section {
+    padding-top: 110px;
+    padding-bottom: 120px; }
+    #about-us-section h1 {
+      margin-bottom: 80px; }
+    #about-us-section p {
+      margin-left: 5%;
+      margin-right: 5%; }
+
+  #contact-section {
+    padding-top: 110px;
+    padding-bottom: 120px; }
+    #contact-section h1 {
+      margin-bottom: 90px; }
+    #contact-section form button {
+      margin-top: 15px; }
+    #contact-section .location-information ul {
+      margin-top: 5px; }
+      #contact-section .location-information ul li {
+        display: inline; } }
+/*Min-width 992*/
+@media (min-width: 992px) {
+  .navbar-brand.img-logo {
+    width: 129px;
+    height: 45px;
+    padding: 0;
+    margin-top: 3px; }
+
+  .navbar-custom.affix .navbar-brand.img-logo {
+    margin-top: 8px; }
+
+  header .header-content iframe {
+    width: 96%;
+    height: 96%; }
+  header .header-content .embed-responsive {
+    margin-top: 75px; }
+  header .header-content h1 {
+    margin-top: 70px; }
+  header .header-content .app-price {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 0px; }
+  header .header-content .header-buttons {
+    text-align: left; }
+
+  #description-section .first-row img {
+    width: 95%; }
+  #description-section .first-row h2 {
+    margin-top: 0px; }
+  #description-section .second-row .nav-pills li a {
+    margin-top: 0px; }
+  #description-section .second-row img {
+    width: 95%;
+    float: right; }
+
+  #free-trial-section form input {
+    margin-top: 0px; }
+
+  #applications-portfolio-section {
+    padding-top: 70px;
+    padding-bottom: 140px; }
+    #applications-portfolio-section h1 {
+      margin-bottom: 80px; }
+    #applications-portfolio-section img {
+      margin-top: 0px; }
+
+  #about-us-section .development-process .process-container {
+    margin-top: 0px; }
+  #about-us-section .development-process .about-us-icons {
+    margin-top: 11px; }
+
+  #contact-section .map-responsive {
+    width: 97%; }
+  #contact-section form {
+    margin-top: 0px;
+    width: 97%;
+    float: right; }
+    #contact-section form textarea {
+      margin-top: 15px; }
+    #contact-section form input {
+      margin-top: 0px; }
+    #contact-section form button {
+      margin-top: 5px; } }
+/*Min-width 1200*/
+@media (min-width: 1200px) {
+  header .header-content .embed-responsive {
+    margin-top: 120px; }
+  header .header-content h1 {
+    margin-top: 115px; }
+
+  #description-section .first-row h2 {
+    margin-top: 60px; }
+  #description-section .second-row .nav-pills li a {
+    margin-top: 60px; }
+
+  #contact-section form {
+    margin-top: 15px; }
+    #contact-section form textarea {
+      margin-top: 20px; }
+    #contact-section form button {
+      margin-top: 15px; }
+  #contact-section .location-information p {
+    margin-bottom: 0px; } }
+
+/*# sourceMappingURL=styles.css.map */
