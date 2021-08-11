@@ -1,0 +1,55 @@
+{
+  "data" : [
+    {
+      "id":1,
+      "firstname":"Dawn",
+      "lastname": "Menor",
+      "todo" : [
+        {
+          "id": 1,
+          "description": "Todo 1",
+          "due_date": "12/12/2021"
+        },
+        {
+          "id": 2,
+          "description": "Todo 1",
+          "due_date": "12/12/2021"
+        }
+      ]
+    },
+    {
+      "id":2,
+      "firstname":"Tom",
+      "lastname": "Holland",
+      "todo" : [
+        {
+          "id": 1,
+          "description": "Todo 1",
+          "due_date": "12/12/2021"
+        },
+        {
+          "id": 2,
+          "description": "Todo 1",
+          "due_date": "12/12/2021"
+        }
+      ]
+    },
+    {
+      "id":3,
+      "firstname":"Zendaya",
+      "lastname": "Coleman",
+      "todo" : [
+        {
+          "id": 1,
+          "description": "Todo 1",
+          "due_date": "12/12/2021"
+        },
+        {
+          "id": 2,
+          "description": "Todo 1",
+          "due_date": "12/12/2021"
+        }
+      ]
+    }
+  ]
+}
